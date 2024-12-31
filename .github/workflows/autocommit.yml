@@ -43,8 +43,6 @@ jobs:
           arr[9]="chore(bot): 👻 auto commit"
           
           rand=$[$RANDOM % ${#arr[@]}]
-
-          git pull origin master --rebase
           
           git commit -m "${arr[$rand]}"
           
